@@ -1,4 +1,4 @@
-html body {
+body {
   height: auto;
   width: 100%;
   background-repeat: no-repeat;
@@ -16,6 +16,10 @@ header{
     position: fixed;
     width: 100%;
     justify-content: center;
+    margin: 0;
+    z-index: 9999;
+    background-color: white;
+    position: sticky;
 }
 
 nav {
@@ -47,13 +51,11 @@ nav ul li a {
 }
 
 /* -------- 1.1 LOGO --------- */
-
 #logo{
   float: left;
   margin: 10px;
   align-self: center;
   padding: 0 90px 0 0;
-
 }
 
 /* -------- 1.2 IKON UDENFOR USER NAVN --------- */
@@ -80,3 +82,32 @@ nav ul li a {
 
 
 /* -------- 2. MAIN  --------- */
+
+/* -------- 2.1 SECTION MED INTRO OG GUIDE  --------- */
+#guidecontainer {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  padding: 90px 130px;
+  margin: 0;
+  background-color: #FAFAFA;
+
+}
+
+#slogan {
+  margin: 0;
+  padding: 2px 0 0 0;
+  font-weight: 100;
+  font-style: italic;
+}
+
+#boldheadline {
+margin: 20px 0 0 0;
+color: #044c7f;
+font-size: 33px;
+}
+
+#guide {
+  font-size: 20px;
+  line-height: 33px;
+}
