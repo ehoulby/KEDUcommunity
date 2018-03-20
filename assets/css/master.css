@@ -45,6 +45,9 @@ nav ul li a {
   font-size: 14px;
   font-weight: 700;
 }
+li a:hover {
+  color: #b9cedc;
+}
 
 /* -------- 1.1 LOGO --------- */
 
@@ -72,6 +75,9 @@ nav ul li a {
   font-weight: 700;
   color: #044c7f;
   font-size: 14px;
+}
+#userinfo p:hover{
+  color: #b9cedc;
 }
 
 #usernavn, #usericon {
