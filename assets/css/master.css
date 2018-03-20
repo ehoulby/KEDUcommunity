@@ -89,7 +89,7 @@ li a:hover {
 
 /* -------- 2. MAIN  --------- */
 
-/* -------- 2.1 SECTION MED INTRO OG GUIDE  --------- */
+/* -------- 2.1 INTRO OG GUIDE  --------- */
 #guidecontainer {
   display: flex;
   margin-top: 50px;
@@ -105,6 +105,7 @@ li a:hover {
   padding: 2px 0 0 0;
   font-weight: 100;
   font-style: italic;
+  font-size: 17px;
 }
 
 #boldheadline {
@@ -117,3 +118,5 @@ font-size: 33px;
   font-size: 20px;
   line-height: 33px;
 }
+
+/* -------- 2.2   --------- */
