@@ -117,6 +117,43 @@ font-size: 33px;
 #guide {
   font-size: 20px;
   line-height: 33px;
+  text-align: justify;
 }
 
-/* -------- 2.2   --------- */
+/* -------- 2.2 FOUR OPTIONS GRID  --------- */
+
+#fouroptions {
+  margin-top: 60px;
+}
+
+.rowone{
+  padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+
+.rowtwo{
+  padding-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#lessonssection, #forumsection, #materialssection, #mediasection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 60px;
+}
+
+#lessonstext, #forumtext, #materialstext, #mediatext{
+  z-index: 9999;
+  background: white;
+  margin: -42px;
+  padding: 40px 90px;
+}
