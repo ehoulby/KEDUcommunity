@@ -20,7 +20,7 @@ header{
 
 nav {
   text-align: center;
-  padding: 0 90px;
+  padding: 0 140px;
 }
 
 nav ul {
@@ -53,6 +53,7 @@ nav ul li a {
   margin: 10px;
   align-self: center;
   padding: 0 90px 0 0;
+  
 }
 
 /* -------- 1.2 IKON UDENFOR USER NAVN --------- */
