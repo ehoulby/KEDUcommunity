@@ -2,43 +2,38 @@ html body {
   height: auto;
   width: 100%;
   background-repeat: no-repeat;
-  text-align: center;
   font-family: 'Lato', sans-serif;
-  color: black;
   margin: 0;
   padding: 0;
 }
-.logo{
-  float: left;
-  margin: 10px;
 
-}
-
-
-
+/* -------- 1. HEADER SECTION --------- */
 header{
     box-shadow: 0 0 10px 0 grey;
     display: flex;
     padding: 12px;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
 }
+
 nav {
-  width: 100%;
-  margin: auto;
   text-align: center;
-
+  padding: 0 90px;
 }
+
 nav ul {
-
   display: block;
-  width: 80%;
   list-style-type: none;
-  margin:auto;
-
-
+  margin: 10px;
+  padding: 0;
 }
+
 nav ul li {
   display: inline-block;
 }
+
 nav ul li a {
 
   font-size: x-large;
@@ -48,5 +43,39 @@ nav ul li a {
   padding: 20px;
   color: #044c7f;
   font-size: 14px;
-
+  font-weight: 700;
 }
+
+/* -------- 1.1 LOGO --------- */
+
+#logo{
+  float: left;
+  margin: 10px;
+  align-self: center;
+  padding: 0 90px 0 0;
+}
+
+/* -------- 1.2 IKON UDENFOR USER NAVN --------- */
+#usericon {
+   align-self: center;
+}
+
+/* -------- 1.3 USER NAVN OG IKON --------- */
+#userinfo{
+  display: flex;
+  flex-direction: row;
+  padding: 0  0 0 90px;
+}
+
+#userinfo p {
+  font-weight: 700;
+  color: #044c7f;
+  font-size: 14px;
+}
+
+#usernavn, #usericon {
+  padding: 0 2px;
+}
+
+
+/* -------- BODY SECTION --------- */
