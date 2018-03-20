@@ -19,7 +19,7 @@ header{
     margin: 0;
     z-index: 9999;
     background-color: white;
-    position: sticky;
+    
 }
 
 nav {
@@ -127,33 +127,40 @@ font-size: 33px;
 }
 
 .rowone{
-  padding-top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+.rowtwo {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
 }
 
-.rowtwo{
-  padding-top: 90px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
-
-#lessonssection, #forumsection, #materialssection, #mediasection{
+#lessonssection, #forumsection, #materialssection, #mediasection {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 60px;
+  padding: 0 30px;
 }
 
-#lessonstext, #forumtext, #materialstext, #mediatext{
+#lessonssection img, #forumsection img, #materialssection img, #mediasection img {
+  position: relative;
+}
+
+#lessonstext, #forumtext, #materialstext, #mediatext {
   z-index: 9999;
-  background: white;
-  margin: -42px;
+  background-color: rgb(255, 255, 255, 0.7);
   padding: 40px 90px;
+  text-align: center;
+  align-self: center;
+  position: relative;
+  top: -280px;
+  left: auto;
+  color: #044c7f;
+  font-weight: 400;
+  font-size: 25px;
 }
