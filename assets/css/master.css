@@ -86,3 +86,17 @@ li a:hover {
 
 
 /* -------- 2. MAIN  --------- */
+
+#boldheadline{
+  position: absolute;
+  top: 100px;
+}
+#slogan{
+  position: absolute;
+  top: 150px;
+}
+
+#guide{
+  position: absolute;
+  top: 200px;
+}
