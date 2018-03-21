@@ -247,3 +247,28 @@ footer h1 {
 
 
 /* -------- 3.2 CONTACT INFORMATION  --------- */
+#yourmessage{
+  height: 300px;
+  width: 350px;
+}
+
+#yourname,#email,#yourmessage{
+  display:flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+#yourname{
+  height: 30px;
+  width: 350px;
+
+}
+
+#email{
+  height: 30px;
+  width: 350px;
+}
+
+.contactform h1{
+  margin: 20px;
+}
