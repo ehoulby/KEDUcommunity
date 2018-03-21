@@ -152,7 +152,6 @@ font-size: 33px;
 }
 
 #lessonstext, #forumtext, #materialstext, #mediatext {
-  z-index: 9999;
   background-color: rgb(255, 255, 255, 0.7);
   padding: 40px 90px;
   text-align: center;
@@ -163,6 +162,9 @@ font-size: 33px;
   color: #044c7f;
   font-weight: 400;
   font-size: 25px;
+}
+#lessonssection a{
+  text-decoration: none;
 }
 
 /* -------- 3. FOOTER  --------- */
