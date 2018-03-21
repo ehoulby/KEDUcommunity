@@ -230,6 +230,9 @@ font-size: 33px;
 
 /* -------- 3. FOOTER  --------- */
 footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-color: #044c7f;
   color: white;
   padding: 0 0 50px 0;
@@ -244,7 +247,9 @@ footer h1 {
 }
 
 /* -------- 3.1 FAQ  --------- */
-
+#faqcontainer {
+  padding-right: 400px;
+}
 
 /* -------- 3.2 CONTACT INFORMATION  --------- */
 #yourmessage{
@@ -269,6 +274,15 @@ footer h1 {
   width: 350px;
 }
 
+#sendbutton {
+  width: 100px;
+  height: 40px;
+  margin: 5px 20px;
+}
+
+
+
 .contactform h1{
-  margin: 20px;
+  margin-top: 50px;
+  margin-left: 20px;
 }
