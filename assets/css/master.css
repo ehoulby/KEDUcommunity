@@ -25,6 +25,9 @@ header{
 nav {
   text-align: center;
   padding: 0 140px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
 }
 
 nav ul {
@@ -84,24 +87,35 @@ li a:hover {
   color: #b9cedc;
 }
 
-#usernavn, #usericon {
+#user-dropdown, #usericon {
   padding: 0 2px;
 }
-/* -------- DROPDOWN MENU  --------- */
+
+#user-dropdown {
+  padding: 0px;
+}
+
+#user-dropdown button {
+  padding: 2px;
+}
+
+/* -------- 1.4 DASHBOARD DROPDOWN  --------- */
 
 .dashbutton {
     color: #044c7f;
-    padding: 16px;
+    padding: 0 16px;
     font-size: 16px;
     border: none;
     font-weight: 700;
     font-size: 14px;
     font-family: 'Lato', sans-serif;
+
 }
 
 .dashboard-dropdown {
     position: relative;
     display: inline-block;
+    align-self: center;
 }
 
 .dash-content {
