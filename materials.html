@@ -12,17 +12,57 @@
 
   <body>
     <header>
-      <img src="assets/images/kedulogo.png" alt="logo" id="logo" >
+      <a href="index.html" id="logo">
+      <img src="assets/images/kedulogo.png" alt="logo" >
+      </a>
       <nav>
+                  <div class="dashboard-dropdown">
+                    <a href="index.html"> <button class="dashbutton">DASHBOARD</button></a>
+                      <div class="dash-content">
+                          <a href="forum.html">FORUM</a>
+                          <a href="materials.html">MATERIALS</a>
+                          <a href="media.html">MEDIA</a>
+                      </div>
+                 </div>
               <ul>
-                <li><a href="index.html">DASHBOARD</a></li>
-                <li><a href="lessons.html">LESSONPLANS</a></li>
-                <li><a href="https://www.kubo.education/#training">TRAINING</a></li>
-                <li><a href="https://www.kubo.education/#manuals">MANUALS</a></li>
+                    <li><a href="lessons.html">LESSONPLANS</a></li>
+                    <li><a href="https://www.kubo.education/#training">TRAINING</a></li>
+                    <li><a href="https://www.kubo.education/#manuals">MANUALS</a></li>
               </ul>
       </nav>
+
       <div id="userinfo">
-            <img src="assets/images/usericon.png" alt="ikon" id="usericon" >
-            <p id="usernavn"> EMILIE HOULBY </p>
+          <img src="assets/images/usericon.png" alt="ikon" id="usericon" >
+          <div class="dashboard-dropdown" id="user-dropdown">
+              <button class="dashbutton"><p>EMILIE HOULBY</p></button>
+              <div class="dash-content">
+                  <a href="#">MY PROFIL</a>
+                  <a href="#">CHANGE PASSWORD</a>
+                  <a href="#">LOG OUT</a>
+              </div>
+          </div>
       </div>
+
     </header>
+    <main>
+
+    </main>
+    <footer>
+      <div class="rowone">
+        <div id="FAQ">
+            <h1 id="faq"> FAQ </h1>
+            <p> Can KUBO be used to teach other subjects? </p>
+            <p> How does KUBO teach children to code? </p>
+            <p> What is KUBO’s Coding License? </p>
+            <p> How do I change my password? </p>
+        </div>
+
+        <div id="contactform">
+
+
+        </div>
+      </div>
+
+    </footer>
+  </body>
+  </html>
