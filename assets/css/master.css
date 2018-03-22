@@ -385,10 +385,33 @@ font-size: 33px;
     color: #044c7f;
   }
 
+  /*------- 5. MY LESSONS -------- */
 
-/* -------- 5 MATERIALS -------- */
+  #headlinemylessons{
+    font-size: 33px;
+    font-weight: 400;
+    color: #044c7f;
+  }
+  #mylessonboxes {
+    padding-left: 40px;
+  }
 
-/* -------- 5.1 MATERIALS INTRO BOKS og TABS -------- */
+  .addbutton {
+      background-color: #044c7f;
+      border: none;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+
+
+/* -------- 6 MATERIALS -------- */
+
+/* -------- 6.1 MATERIALS INTRO BOKS og TABS -------- */
 #materialsintro {
 display: flex;
 margin-top: 50px;
