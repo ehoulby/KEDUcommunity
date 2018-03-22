@@ -323,10 +323,12 @@ font-size: 33px;
 }
 
 .box1{
-  border: 1px solid black;
+  border: none;
   width: 180px;
   height: 200px;
   font-size: 12px;
+  padding-left: 10px;
+  box-shadow: 0 0 10px 0 grey;
 }
 
 .icons{
@@ -337,7 +339,11 @@ font-size: 33px;
 
 .icons img {
   padding-top: 15px;
-  padding-left: 5px;
+
+}
+.paragraph {
+  padding-left: 25px;
+
 }
 
 }
@@ -352,10 +358,7 @@ padding: 90px 130px;
 margin: 0;
 background-color: #f7f7f7;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 7678a96bdfc4e2c8917b0efa7e5768bea19a9cd6
 
 .materialtabbuttons {
   text-align: center;
