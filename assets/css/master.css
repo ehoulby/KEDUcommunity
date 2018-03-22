@@ -317,3 +317,16 @@ font-size: 33px;
 }
 
 /* -------- 4.2 Lessonsplans  --------- */
+
+
+
+/* -------- 5 MATERIALS -------- */
+#materialsintro {
+display: flex;
+margin-top: 50px;
+flex-direction: column;
+padding: 90px 130px;
+margin: 0;
+background-color: #f7f7f7;
+
+}
