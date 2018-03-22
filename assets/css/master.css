@@ -416,6 +416,8 @@ background-color: #f7f7f7;
 
 .kedumaterial {
   padding: 0 130px;
+  padding-bottom: 60px;
+  padding-top: 40px;
 }
 
 #worksheet1, #worksheet2, #worksheet3, #worksheet4, #worksheet5, #worksheet6, #worksheet7, #worksheet8, #worksheet9 {
@@ -425,6 +427,10 @@ background-color: #f7f7f7;
 
 #worksheet1 {
   padding-top: 30px;
+}
+
+#worksheet9 {
+  padding-bottom: 30px;
 }
 
 .kedumaterialdiv img {
@@ -437,4 +443,16 @@ background-color: #f7f7f7;
   border-style: solid;
   border-width: 1px;
   border-color: grey;
+}
+
+.downloadicon {
+  margin-left: 900px;
+}
+
+#activitymapicon{
+  margin-left: 915px;
+}
+
+#licenseicon {
+  margin-left: 832px;
 }
