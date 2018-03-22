@@ -292,10 +292,8 @@ footer h1 {
 /*--------- 4. lessons ---------*/
 
 #lessonscontainer{
-  display: flex;
   margin-top: 50px;
-  flex-direction: column;
-  padding: 90px 130px;
+  padding: 90px 40px;
   margin: 0;
   background-color: #f7f7f7;
 }
@@ -313,24 +311,31 @@ font-size: 33px;
 #lessonsguide {
   font-size: 20px;
   line-height: 33px;
-  text-align: justify;
+
 }
 
 /* -------- 4.2 Lessonsplans  --------- */
 
-
-
-/* -------- 5 MATERIALS -------- */
-
-/* -------- 5.1 MATERIALS INTRO BOKS og TABS -------- */
-#materialsintro {
-display: flex;
-margin-top: 50px;
-flex-direction: column;
-padding: 90px 130px;
-margin: 0;
-background-color: #f7f7f7;
+#codingheadline{
+  font-size: 33px;
+  font-weight: 400;
+  color: #044c7f;
 }
+
+.box1{
+  border: 1px solid black;
+  width: 180px;
+  height: 200px;
+  font-size: 12px;
+}
+
+.icons{
+  display: flex;
+  flex-direction: column;
+
+
+}
+<<<<<<< HEAD
 
 .materialtabbuttons {
   text-align: center;
@@ -341,3 +346,5 @@ background-color: #f7f7f7;
   font-weight: 700;
   border: none;
 }
+=======
+>>>>>>> ec15199c2b369ae2bd9bb249f83136a456f66919
