@@ -397,5 +397,9 @@ background-color: #f7f7f7;
 
 .kedumaterial {
   padding-left: 130px;
+}
 
+#worksheet1, #worksheet2, #worksheet3, #worksheet4, #worksheet5, #worksheet6, #worksheet7, #worksheet8, #worksheet9 {
+  display: flex;
+  flex-direction: row;
 }
