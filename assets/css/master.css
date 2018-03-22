@@ -169,7 +169,7 @@ li a:hover {
   font-size: 17px;
 }
 
-#boldheadline {
+.boldheadline {
 margin: 20px 0 0 0;
 color: #044c7f;
 font-size: 33px;
@@ -320,7 +320,7 @@ font-size: 33px;
   padding-left: 40px;
 }
 
-#codingheadline{
+.regularheadline{
   font-size: 33px;
   font-weight: 400;
   color: #044c7f;
@@ -381,9 +381,18 @@ background-color: #f7f7f7;
   text-align: center;
   line-height: normal;
   color: #044c7f;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 400;
   border: none;
   background-color: transparent;
   padding: 0;
+}
+
+.materialtabs {
+  margin-top: 40px;
+}
+
+/* -------- KEDU MATERIAL TAB -------- */
+.kedumaterial {
+  padding-left: 40px;
 }
