@@ -456,3 +456,7 @@ background-color: #f7f7f7;
 #licenseicon {
   margin-left: 832px;
 }
+
+#worksheet1:hover, #worksheet2:hover, #worksheet3:hover, #worksheet4:hover, #worksheet5:hover, #worksheet6:hover, #worksheet7:hover, #worksheet8:hover, #worksheet9:hover  {
+  background-color: #f1f1f1;
+}
