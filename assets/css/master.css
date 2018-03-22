@@ -440,7 +440,15 @@ background-color: #f7f7f7;
     background-color: #ccc;
 }
 
-.materialscontenttab {
+#kedumaterial {
+  display: block;
+}
+
+#mymaterial {
+  display: none;
+}
+
+#communitymaterial {
   display: none;
 }
 

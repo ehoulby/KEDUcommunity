@@ -6,7 +6,7 @@
     <link rel="icon" type="image/png" sizes="12x12" href="assets/images/favicon.ico">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta description="">
-    <script src="assets/javascript/script.js"></script>
+    <script type="text/javascript" src="assets/javascript/script.js"> </script>
     <link rel="stylesheet" href="assets/css/master.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100i,400,700" rel="stylesheet">
   </head>
@@ -55,13 +55,13 @@
         </p>
 
         <div class="materialtabs">
-          <button class="materialtabbuttons" onclick="showMaterial()">KEDU MATERIAL</button>
-          <button class="materialtabbuttons" onclick="showMaterial()">MY MATERIAL</button>
-          <button class="materialtabbuttons" onclick="showMaterial()">COMMUNITY MATERIAL</button>
+          <button onclick="showKeduMaterial()">KEDU MATERIAL</button>
+          <button onclick="showMyMaterial()">MY MATERIAL</button>
+          <button onclick="showCommunityMaterial()">COMMUNITY MATERIAL</button>
         </div>
       </section>
 
-      <section id="kedumaterial" class="materialscontenttab">
+      <section id="kedumaterial">
           <h2 class="regularheadline">KEDU MATERIAL</h2>
           <div class="materialdiv">
               <div id="worksheet1">
@@ -121,7 +121,7 @@
           </div>
       </section>
 
-      <section id="mymaterial" class="materialscontenttab">
+      <section id="mymaterial">
           <h2 class="regularheadline"> MY MATERIAL</h2>
           <div class="mymaterialdiv">
           <input id="filupload" name="myMaterial" type="file">
@@ -163,7 +163,7 @@
                     <a href="assets/files/worksheet 1.8.docx"><img src="assets/images/download.png" alt="download icon" class="downloadicon"></a>
                   </div>
       </section>
-      <section id="communitymaterial" class="materialscontenttab">
+      <section id="communitymaterial">
           <h2 class="regularheadline">COMMUNITY MATERIAL</h2>
           <div class="materialdiv">
             <div id="comfile1">
