@@ -333,9 +333,25 @@ font-size: 33px;
   display: flex;
   flex-direction: column;
 
+}
+
+.icons img {
+  padding-top: 15px;
+  padding-left: 5px;
+}
 
 }
-<<<<<<< HEAD
+/* -------- 5 MATERIALS -------- */
+
+/* -------- 5.1 MATERIALS INTRO BOKS og TABS -------- */
+#materialsintro {
+display: flex;
+margin-top: 50px;
+flex-direction: column;
+padding: 90px 130px;
+margin: 0;
+background-color: #f7f7f7;
+}
 
 .materialtabbuttons {
   text-align: center;
@@ -346,5 +362,3 @@ font-size: 33px;
   font-weight: 700;
   border: none;
 }
-=======
->>>>>>> ec15199c2b369ae2bd9bb249f83136a456f66919
