@@ -444,7 +444,7 @@ font-weight: 400;
 }
 
 #combutton {
-font-weight: 400; 
+font-weight: 400;
 }
 
 #kedumaterial {
@@ -459,6 +459,9 @@ font-weight: 400;
   display: none;
 }
 
+button:focus { /*Fjerner den blå kant rundt om knapper*/
+  outline:0;
+}
 
 
 /* -------- KEDU MATERIAL TAB -------- */
