@@ -415,7 +415,7 @@ background-color: #f7f7f7;
 
 
 .kedumaterial {
-  padding-left: 130px;
+  padding: 0 130px;
 }
 
 #worksheet1, #worksheet2, #worksheet3, #worksheet4, #worksheet5, #worksheet6, #worksheet7, #worksheet8, #worksheet9 {
@@ -423,6 +423,18 @@ background-color: #f7f7f7;
   flex-direction: row;
 }
 
-.kedumaterial img {
+#worksheet1 {
+  padding-top: 30px;
+}
+
+.kedumaterialdiv img {
   align-self: center;
+  padding-right: 10px;
+  padding-left: 40px;
+}
+
+.kedumaterialdiv {
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
 }
