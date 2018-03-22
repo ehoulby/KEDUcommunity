@@ -510,3 +510,10 @@ padding-top: 40px;
   background-color: #f1f1f1;
   color: #b9cedc;
 }
+
+/* -------- COMMUNITY MATERIAL TAB -------- */
+#communitymaterial{
+  padding: 0 130px;
+  padding-bottom: 60px;
+  padding-top: 40px;
+}
