@@ -343,13 +343,18 @@ font-size: 33px;
 
 .icons img {
   padding-top: 15px;
-
-}
-.paragraph {
-  padding-left: 25px;
+  align-self: center;
 
 }
 
+
+.icon1{
+  display: flex;
+  flex-direction: row;
+}
+#normallessons{
+  align-self: center;
+}
 
 /* -------- 5 MATERIALS -------- */
 
@@ -362,10 +367,7 @@ padding: 90px 130px;
 margin: 0;
 background-color: #f7f7f7;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> f3775839b5d0822bb78a77467f6fa5d19f383b14
 
 .materialtabbuttons {
   text-align: center;
