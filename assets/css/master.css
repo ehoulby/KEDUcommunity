@@ -436,6 +436,16 @@ background-color: #f7f7f7;
   margin-top: 40px;
 }
 
+.materialtabs button.active {
+    background-color: #ccc;
+}
+
+.materialscontenttab {
+  display: none;
+}
+
+
+
 /* -------- KEDU MATERIAL TAB -------- */
 
 
