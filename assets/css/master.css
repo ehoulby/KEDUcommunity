@@ -169,7 +169,7 @@ li a:hover {
   font-size: 17px;
 }
 
-#boldheadline {
+.boldheadline {
 margin: 20px 0 0 0;
 color: #044c7f;
 font-size: 33px;
@@ -446,11 +446,18 @@ background-color: #f7f7f7;
 }
 
 .downloadicon {
-  align-self: center;
+  margin: 16px 0;
 }
 
 
 
 #worksheet1:hover, #worksheet2:hover, #worksheet3:hover, #worksheet4:hover, #worksheet5:hover, #worksheet6:hover, #worksheet7:hover, #worksheet8:hover, #worksheet9:hover  {
   background-color: #f1f1f1;
+}
+
+/* -------- MY MATERIAL TAB -------- */
+#mymaterial {
+padding: 0 130px;
+padding-bottom: 60px;
+padding-top: 40px;
 }
