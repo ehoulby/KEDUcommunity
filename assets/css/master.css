@@ -228,6 +228,8 @@ font-size: 33px;
   text-decoration: none;
 }
 
+
+
 /* -------- 3. FOOTER  --------- */
 footer {
   display: flex;
@@ -286,3 +288,32 @@ footer h1 {
   margin-top: 50px;
   margin-left: 20px;
 }
+
+/*--------- 4. lessons ---------*/
+
+#lessonscontainer{
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  padding: 90px 130px;
+  margin: 0;
+  background-color: #f7f7f7;
+}
+
+/* -------- 4.1 INTRO OG GUIDE  --------- */
+
+
+
+#headlinelessons {
+margin: 20px 0 0 0;
+color: #044c7f;
+font-size: 33px;
+}
+
+#lessonsguide {
+  font-size: 20px;
+  line-height: 33px;
+  text-align: justify;
+}
+
+/* -------- 4.2 Lessonsplans  --------- */
