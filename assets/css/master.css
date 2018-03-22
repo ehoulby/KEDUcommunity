@@ -427,7 +427,6 @@ background-color: #f7f7f7;
   line-height: normal;
   color: #044c7f;
   font-size: 14px;
-  font-weight: 700;
   border: none;
   background-color: transparent;
   padding: 0;
@@ -436,8 +435,16 @@ background-color: #f7f7f7;
   margin-top: 40px;
 }
 
-.materialtabs button.active {
-    background-color: #ccc;
+#kedubutton {
+font-weight: 400;
+}
+
+#mybutton{
+font-weight: 400;
+}
+
+#combutton {
+font-weight: 400; 
 }
 
 #kedumaterial {
