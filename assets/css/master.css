@@ -169,7 +169,7 @@ li a:hover {
   font-size: 17px;
 }
 
-.boldheadline {
+#boldheadline {
 margin: 20px 0 0 0;
 color: #044c7f;
 font-size: 33px;
@@ -293,7 +293,7 @@ footer h1 {
 
 #lessonscontainer{
   margin-top: 50px;
-  padding: 90px 130px;
+  padding: 90px 40px;
   margin: 0;
   background-color: #f7f7f7;
 }
@@ -317,7 +317,7 @@ font-size: 33px;
 /* -------- 4.2 Lessonsplans  --------- */
 
 #lessonboxes {
-  padding-left: 130px;
+  padding-left: 40px;
 }
 
 .regularheadline{
@@ -379,7 +379,11 @@ font-size: 33px;
 #lessonsboxes2{
     padding-left: 40px;
   }
-}
+  #lettersheadline{
+    font-size: 33px;
+    font-weight: 400;
+    color: #044c7f;
+  }
 /* -------- 5 MATERIALS -------- */
 
 /* -------- 5.1 MATERIALS INTRO BOKS og TABS -------- */
@@ -397,21 +401,9 @@ background-color: #f7f7f7;
   text-align: center;
   line-height: normal;
   color: #044c7f;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 700;
   border: none;
   background-color: transparent;
   padding: 0;
-}
-
-.materialtabs {
-  margin-top: 40px;
-}
-
-/* -------- KEDU MATERIAL TAB -------- */
-
-
-.kedumaterial {
-  padding-left: 130px;
-
 }
