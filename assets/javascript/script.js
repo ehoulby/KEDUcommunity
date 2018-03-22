@@ -1,8 +1,11 @@
+
+
 function showMyMaterial() {
-    var mymaterial = document.getElementById("mymaterial");
-    var combutton = document.getElementById("combutton");
-    var kedubutton = document.getElementById("kedubutton");
-    var mybutton = document.getElementById("mybutton");
+  var kedumaterial = document.getElementById("kedumaterial");
+  var kedubutton = document.getElementById("kedubutton");
+  var combutton = document.getElementById("combutton");
+  var kedubutton = document.getElementById("kedubutton");
+  var mybutton = document.getElementById("mybutton");
 
     kedumaterial.style.display = 'none';
     communitymaterial.style.display = 'none';
@@ -17,11 +20,11 @@ function showMyMaterial() {
 }
 
 function showKeduMaterial() {
-    var kedumaterial = document.getElementById("kedumaterial");
-    var kedubutton = document.getElementById("kedubutton");
-    var combutton = document.getElementById("combutton");
-    var kedubutton = document.getElementById("kedubutton");
-    var mybutton = document.getElementById("mybutton");
+  var kedumaterial = document.getElementById("kedumaterial");
+  var kedubutton = document.getElementById("kedubutton");
+  var combutton = document.getElementById("combutton");
+  var kedubutton = document.getElementById("kedubutton");
+  var mybutton = document.getElementById("mybutton");
 
     kedumaterial.style.display = 'block';
     communitymaterial.style.display = 'none';
@@ -38,10 +41,11 @@ function showKeduMaterial() {
 
 
 function showCommunityMaterial() {
-    var communitymaterial = document.getElementById("communitymaterial");
-    var combutton = document.getElementById("combutton");
-    var kedubutton = document.getElementById("kedubutton");
-    var mybutton = document.getElementById("mybutton");
+  var kedumaterial = document.getElementById("kedumaterial");
+  var kedubutton = document.getElementById("kedubutton");
+  var combutton = document.getElementById("combutton");
+  var kedubutton = document.getElementById("kedubutton");
+  var mybutton = document.getElementById("mybutton");
 
     kedumaterial.style.display = 'none';
     communitymaterial.style.display = 'block';

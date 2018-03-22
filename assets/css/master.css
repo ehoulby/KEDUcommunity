@@ -426,7 +426,7 @@ background-color: #f7f7f7;
   text-align: center;
   line-height: normal;
   color: #044c7f;
-  font-size: 14px;
+  font-size: 20px;
   border: none;
   background-color: transparent;
   padding: 0;
@@ -435,17 +435,15 @@ background-color: #f7f7f7;
   margin-top: 40px;
 }
 
+#mybutton, #combutton {
+font-weight: 400;
+}
+
 #kedubutton {
-font-weight: 400;
+  font-weight: 700;
 }
 
-#mybutton{
-font-weight: 400;
-}
 
-#combutton {
-font-weight: 400;
-}
 
 #kedumaterial {
   display: block;
