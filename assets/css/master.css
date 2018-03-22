@@ -316,6 +316,10 @@ font-size: 33px;
 
 /* -------- 4.2 Lessonsplans  --------- */
 
+#lessonboxes {
+  padding-left: 40px;
+}
+
 #codingheadline{
   font-size: 33px;
   font-weight: 400;
@@ -346,7 +350,7 @@ font-size: 33px;
 
 }
 
-}
+
 /* -------- 5 MATERIALS -------- */
 
 /* -------- 5.1 MATERIALS INTRO BOKS og TABS -------- */
@@ -358,7 +362,10 @@ padding: 90px 130px;
 margin: 0;
 background-color: #f7f7f7;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> f3775839b5d0822bb78a77467f6fa5d19f383b14
 
 .materialtabbuttons {
   text-align: center;
