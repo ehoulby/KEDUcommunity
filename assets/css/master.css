@@ -292,10 +292,8 @@ footer h1 {
 /*--------- 4. lessons ---------*/
 
 #lessonscontainer{
-  display: flex;
   margin-top: 50px;
-  flex-direction: column;
-  padding: 90px 130px;
+  padding: 90px 40px;
   margin: 0;
   background-color: #f7f7f7;
 }
@@ -313,7 +311,27 @@ font-size: 33px;
 #lessonsguide {
   font-size: 20px;
   line-height: 33px;
-  text-align: justify;
+
 }
 
 /* -------- 4.2 Lessonsplans  --------- */
+
+#codingheadline{
+  font-size: 33px;
+  font-weight: 400;
+  color: #044c7f;
+}
+
+.box1{
+  border: 1px solid black;
+  width: 180px;
+  height: 200px;
+  font-size: 12px;
+}
+
+.icons{
+  display: flex;
+  flex-direction: column;
+
+
+}
