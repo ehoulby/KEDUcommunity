@@ -321,6 +321,8 @@ font-size: 33px;
 
 
 /* -------- 5 MATERIALS -------- */
+
+/* -------- 5.1 MATERIALS INTRO BOKS og TABS -------- */
 #materialsintro {
 display: flex;
 margin-top: 50px;
@@ -328,5 +330,6 @@ flex-direction: column;
 padding: 90px 130px;
 margin: 0;
 background-color: #f7f7f7;
-
 }
+
+.tablinks
