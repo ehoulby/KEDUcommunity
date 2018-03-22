@@ -360,9 +360,10 @@ background-color: #f7f7f7;
 .materialtabbuttons {
   text-align: center;
   line-height: normal;
-  padding: 20px;
   color: #044c7f;
   font-size: 14px;
   font-weight: 700;
   border: none;
+  background-color: transparent;
+  padding: 0;
 }
