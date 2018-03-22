@@ -517,3 +517,16 @@ padding-top: 40px;
   padding-bottom: 60px;
   padding-top: 40px;
 }
+
+#comfile1, #comfile2, #comfile3{
+  display: flex;
+  flex-direction: row;
+}
+
+#comfile1 {
+  padding-top: 30px;
+}
+
+#comfile3 {
+  padding-bottom: 30px;
+}
