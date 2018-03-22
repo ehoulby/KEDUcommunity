@@ -348,10 +348,18 @@ font-size: 33px;
 }
 
 
-.icon1{
+.normallesson, .time, .subject, .grade{
   display: flex;
   flex-direction: row;
 }
+
+.normallesson p, .time p, .subject p, .grade p{
+  align-self: center;
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
 #normallessons{
   align-self: center;
 }
