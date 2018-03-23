@@ -483,19 +483,16 @@ button:focus { /*Fjerner den blå kant rundt om knapper*/
   padding-top: 40px;
 }
 
-#worksheet2, #worksheet3, #worksheet4, #worksheet5, #worksheet6, #worksheet7, #worksheet8, #worksheet9 {
+#worksheet1div, {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#worksheet1, #worksheet2,#worksheet3,#worksheet4, #worksheet5, #worksheet6, #worksheet7, #worksheet8, #worksheet9, .downloadicon{
   display: flex;
   flex-direction: row;
 }
 
-#worksheet1 {
-  padding-top: 30px;
-  float:left;
-}
-
-#worksheet1div {
-  float: right;
-}
 
 #worksheet9 {
   padding-bottom: 30px;
