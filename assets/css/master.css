@@ -485,12 +485,12 @@ button:focus { /*Fjerner den blå kant rundt om knapper*/
 
 #worksheet1div, {
   flex-direction: row;
-  justify-content: space-between;
 }
 
 #worksheet1, #worksheet2,#worksheet3,#worksheet4, #worksheet5, #worksheet6, #worksheet7, #worksheet8, #worksheet9, .downloadicon{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 
@@ -505,6 +505,7 @@ button:focus { /*Fjerner den blå kant rundt om knapper*/
 }
 
 .materialdiv {
+  flex-direction: column;
   border-style: solid;
   border-width: 1px;
   border-color: grey;
