@@ -534,6 +534,7 @@ padding-top: 40px;
 }
 
 #myfile1, #myfile2, #myfile3, #myfile4 {
+  padding: 20px 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -564,8 +565,10 @@ padding-top: 40px;
 }
 
 #comfile1, #comfile2, #comfile3{
+  padding: 20px 30px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 #comfile1 {
