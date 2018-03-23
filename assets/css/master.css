@@ -396,7 +396,7 @@ font-size: 33px;
     padding-left: 40px;
   }
 
-  .addbutton {
+  .standardbutton {
       background-color: #00a19b;
       color: white;
       padding: 15px 20px;
@@ -410,7 +410,7 @@ font-size: 33px;
       border-color: #00a19b;
       border: 1px solid #00a19b;
 }
-.addbutton:hover{
+.standardbutton:hover{
   background-color: white;
   color: #00a19b;
   border: 1px solid #00a19b;
