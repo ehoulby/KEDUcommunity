@@ -397,23 +397,23 @@ font-size: 33px;
   }
 
   .addbutton {
-      background-color: #044c7f;
+      background-color: #00a19b;
       color: white;
       padding: 15px 20px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 16px;
+      font-size: 12px;
       margin: 4px 2px;
       cursor: pointer;
       border-radius: 10px;
-      border-color: #044c7f;
-      border: 1px solid #044c7f;
+      border-color: #00a19b;
+      border: 1px solid #00a19b;
 }
 .addbutton:hover{
   background-color: white;
-  color: #044c7f;
-  border: 1px solid #044c7f;
+  color: #00a19b;
+  border: 1px solid #00a19b;
 }
 .boxicons1{
   display: flex;
