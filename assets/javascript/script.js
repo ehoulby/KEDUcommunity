@@ -45,9 +45,23 @@ function showCommunityMaterial() {
 }
 
 function showKuboLessons () {
-  mylessons.style.display = 'none';
+  mylessonboxes.style.display = 'none';
   lessonsboxesboth.style.display = 'block';
 
-  if
+  if (lessonsboxesboth.style.display === 'block') {
+    kubolessonsbutton.style.fontWeight = '700';
+    mylessonsbutton.style.fontWeight = '400';
+  }
+
+}
+
+function showMyLessons () {
+  mylessonboxes.style.display = 'block';
+  lessonsboxesboth.style.display = 'none';
+
+  if (mylessonboxes.style.display === 'block') {
+    kubolessonsbutton.style.fontWeight = '400';
+    mylessonsbutton.style.fontWeight = '700';
+  }
 
 }
