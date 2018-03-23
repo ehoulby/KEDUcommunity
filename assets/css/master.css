@@ -420,6 +420,28 @@ font-size: 33px;
   flex-direction: column;
 }
 
+/* -------- 5.1 LESSONS TABS -------- */
+.lessontabs {
+  margin-top: 40px;
+}
+
+#mylessonsbutton{
+font-weight: 400;
+}
+
+#kubolessonsbutton {
+  font-weight: 700;
+}
+
+
+
+#lessonsboxesboth{
+  display: block;
+}
+
+#mylessonboxes {
+  display: none;
+}
 
 /* -------- 6 MATERIALS -------- */
 

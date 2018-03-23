@@ -50,13 +50,15 @@
         <p id="lessonsguide">In lessons you will find KEDU’s customized lesson plans.
         You’ll also have the ability to create your own lesson plans, you can share your
         lessonplans with other teachers and have them add them to their own lesson plans. </p>
+      <!-------  /*
         <div class="lessontabs">
-          <button class="materialtabbuttons" id="kubolessons" onclick="showKuboLessons()">KUBO LESSONS</button>
-          <button class="materialtabbuttons" id="mylessons" onclick="showMyLessons()">MY LESSONS</button>
-        </div>
+          <button class="materialtabbuttons" id="kubolessonsbutton" onclick="showKuboLessons()">KUBO LESSONS</button>
+          <button class="materialtabbuttons" id="mylessonsbutton" onclick="showMyLessons()">MY LESSONS</button>
+        </div> ------->
 
       </section>
-      <section id="lessonboxes">
+      <section id="lessonsboxesboth">
+        <div id="lessonboxes">
       <h2 class="regularheadline">KUBO CODING</h2>
       <p id="codingparagraph">KUBO’s Coding was designed to give students aged
         four to 10 a strong foundational understanding of TagTile® coding.
@@ -191,9 +193,10 @@
                 </div>
             </div>
         </div>
-      </section>
+      </div>
 
-      <section id="lessonsboxes2">
+
+      <div id="lessonsboxes2">
         <h2 id="lettersheadline">KUBO LETTERS</h2>
         <div class="boxes1">
         <div class="box1">
@@ -219,6 +222,75 @@
               <p>Kindergarden 1.., 2.., 3.., 4.., 5. Grade</p>
             </div>
         </section>
+
+        <section id="mylessonboxes">
+          <h2 id="headlinemylessons">MY LESSONS</h2>
+        <a href="newlesson.html" class="standardbutton">CREATE NEW LESSON +</a>
+        <div class="boxes">
+          <div class="boxicons1">
+              <div class="box1">
+                  <h3>Lesson One: Introduction</h3>
+                  <div class="icons">
+                      <div class="normallesson">
+                        <img src="assets/images/kalender.png" alt="ikon1"  >
+                        <p id="normallessons">Normal Lesson</p>
+                      </div>
+
+                      <div class="time">
+                        <img src="assets/images/ur.png" alt="ikon1"  >
+                        <p>145 Minutes</p>
+                      </div>
+
+                      <div class="subject">
+                        <img src="assets/images/bogmærke.png" alt="ikon1"  >
+                        <p>Math, Science</p>
+                      </div>
+
+                      <div class="grade">
+                        <img src="assets/images/stjerne.png" alt="ikon1"  >
+                        <p>Kindergarden 1.., 2.., 3.., 4.., 5. Grade</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="addicons1">
+                <img src="assets/images/add.png" alt="addicon">
+                <img src="assets/images/edit.png" alt="addicon">
+                <img src="assets/images/trashcan.png" alt="addicon">
+              </div>
+              </div>
+
+              <div class="box2">
+                <h3>Lesson Two: Introduction</h3>
+                <div class="icons">
+                     <div class="normallesson">
+                       <img src="assets/images/kalender.png" alt="ikon1"  >
+                       <p id="normallessons">Normal Lesson</p>
+                     </div>
+
+                     <div class="time">
+                       <img src="assets/images/ur.png" alt="ikon1"  >
+                       <p>145 Minutes</p>
+                     </div>
+
+                     <div class="subject">
+                       <img src="assets/images/bogmærke.png" alt="ikon1"  >
+                       <p>Math, Science</p>
+                     </div>
+
+                     <div class="grade">
+                       <img src="assets/images/stjerne.png" alt="ikon1">
+                       <p>Kindergarden 1.., 2.., 3.., 4.., 5. Grade</p>
+                     </div>
+                   </div>
+              </div>
+              <div class="addicons2">
+  <img src="assets/images/add.png" alt="addicon">
+  <img src="assets/images/edit.png" alt="addicon">
+  <img src="assets/images/trashcan.png" alt="addicon">
+              </div>
+</div>
+        </section>
+
 
 
     </main>

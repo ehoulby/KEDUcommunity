@@ -1,11 +1,4 @@
-
-
 function showMyMaterial() {
-  var kedumaterial = document.getElementById("kedumaterial");
-  var kedubutton = document.getElementById("kedubutton");
-  var combutton = document.getElementById("combutton");
-  var kedubutton = document.getElementById("kedubutton");
-  var mybutton = document.getElementById("mybutton");
 
     kedumaterial.style.display = 'none';
     communitymaterial.style.display = 'none';
@@ -20,11 +13,7 @@ function showMyMaterial() {
 }
 
 function showKeduMaterial() {
-  var kedumaterial = document.getElementById("kedumaterial");
-  var kedubutton = document.getElementById("kedubutton");
-  var combutton = document.getElementById("combutton");
-  var kedubutton = document.getElementById("kedubutton");
-  var mybutton = document.getElementById("mybutton");
+
 
     kedumaterial.style.display = 'block';
     communitymaterial.style.display = 'none';
@@ -41,17 +30,13 @@ function showKeduMaterial() {
 
 
 function showCommunityMaterial() {
-  var kedumaterial = document.getElementById("kedumaterial");
-  var kedubutton = document.getElementById("kedubutton");
-  var combutton = document.getElementById("combutton");
-  var kedubutton = document.getElementById("kedubutton");
-  var mybutton = document.getElementById("mybutton");
 
-    kedumaterial.style.display = 'none';
-    communitymaterial.style.display = 'block';
-    mymaterial.style.display = 'none';
+  kedumaterial.style.display = 'none';
+  communitymaterial.style.display = 'block';
+  mymaterial.style.display = 'none';
 
     if (communitymaterial.style.display === 'block') {
+
       combutton.style.fontWeight = '700';
       kedubutton.style.fontWeight = '400';
       mybutton.style.fontWeight = '400';
@@ -59,11 +44,10 @@ function showCommunityMaterial() {
 }
 }
 
-function showKuboLessons() {
+function showKuboLessons () {
+  mylessons.style.display = 'none';
+  lessonsboxesboth.style.display = 'block';
 
-}
+  if
 
-
-function showMyLessons() {
-  
 }
