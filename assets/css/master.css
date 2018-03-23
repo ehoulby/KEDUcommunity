@@ -398,7 +398,6 @@ font-size: 33px;
 
   .addbutton {
       background-color: #044c7f;
-      border: none;
       color: white;
       padding: 15px 20px;
       text-align: center;
@@ -407,7 +406,20 @@ font-size: 33px;
       font-size: 16px;
       margin: 4px 2px;
       cursor: pointer;
+      border-radius: 10px;
+      border-color: #044c7f;
+      border: 1px solid #044c7f;
 }
+.addbutton:hover{
+  background-color: white;
+  color: #044c7f;
+  border: 1px solid #044c7f;
+}
+.boxicons1{
+  display: flex;
+  flex-direction: column;
+}
+
 
 /* -------- 6 MATERIALS -------- */
 
