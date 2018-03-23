@@ -483,19 +483,17 @@ button:focus { /*Fjerner den blå kant rundt om knapper*/
   padding-top: 40px;
 }
 
-#worksheet1div, {
-  flex-direction: row;
-}
 
-#worksheet1, #worksheet2,#worksheet3,#worksheet4, #worksheet5, #worksheet6, #worksheet7, #worksheet8, #worksheet9, .downloadicon{
+
+#worksheet1, #worksheet2,#worksheet3,#worksheet4, #worksheet5, #worksheet6, #worksheet7, #worksheet8, #worksheet9{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 20px 30px;
 }
 
-
-#worksheet9 {
-  padding-bottom: 30px;
+.downloadicondiv img {
+  margin: 16px 0;
 }
 
 .materialdiv img {
@@ -511,8 +509,9 @@ button:focus { /*Fjerner den blå kant rundt om knapper*/
   border-color: grey;
 }
 
+
 .downloadicon {
-  margin: 16px 0;
+
 }
 
 
@@ -537,6 +536,7 @@ padding-top: 40px;
 #myfile1, #myfile2, #myfile3, #myfile4 {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 #myfile1 {
@@ -550,6 +550,10 @@ padding-top: 40px;
 #myfile1:hover, #myfile2:hover, #myfile3:hover, #myfile4:hover{
   background-color: #f1f1f1;
   color: #b9cedc;
+}
+
+.iconsmaterial img {
+  margin: 16px 0;
 }
 
 /* -------- COMMUNITY MATERIAL TAB -------- */
