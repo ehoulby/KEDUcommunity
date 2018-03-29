@@ -70,3 +70,8 @@ function showMyLessons () {
 function showCreateNewLesson() {
   createnewlesson.style.display = 'block';
 }
+
+document.getElementById("createnewlesson").addEventListener("click", function(event) {
+  var lessondiv = document.getElementById("createnewlesson");
+        lessondiv.style.display = "none";
+}
