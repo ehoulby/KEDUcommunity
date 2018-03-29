@@ -226,8 +226,8 @@
 
         <section id="mylessonboxes">
           <h2 id="headlinemylessons">MY LESSONS</h2>
-        <a href="newlesson.html" class="standardbutton">CREATE NEW LESSON +</a>
-        <div class="boxes">
+          <button type="button" name="button" class="standardbutton" onclick="showCreateNewLesson()">Create new lesson + </button>
+          <div class="boxes">
           <div class="boxicons1">
               <div class="box1">
                   <h3>Lesson One: Introduction</h3>
@@ -296,7 +296,100 @@
 </div>
         </section>
 
+        <section id="createnewlesson">
+          <div id="createnewlessonchild">
+          <div id="createnewlessonheadline">
+            <h1 class="boldheadline"> CREATE NEW LESSON </h1>
+          </div>
 
+          <div id="nameoflesson">
+            <input id="nameoflessoninput"type="text" placeholder="Name of lesson">
+          </div>
+
+          <div id="selectcategory">
+            <select id="selectcategorydropdown">
+                <option value="0">Select a category</option>
+                <option value="1">Math</option>
+                <option value="2">Science</option>
+                <option value="3">Danish</option>
+                <option value="4">History</option>
+                <option value="5">English</option>
+            </select>
+          </div>
+
+          <div id="selectgradelevel">
+          <h1 class="regularheadline"> Select grade level </h1>
+              <form>
+                <div>
+                  <input type="checkbox" name="kindergarten" value="kindergarten">
+                  <label for="kindergarten">Kindergarten</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" name="firstgrade" value="firstgrade">
+                  <label for="firstgrade">1. Grade</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" name="secondgrade" value="secondgrade">
+                  <label for="kindergarten">2. Grade</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" name="thirdgrade" value="thirdgrade">
+                  <label for="kindergarten">3. Grade</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" name="fourthgrade" value="fourthgrade">
+                  <label for="kindergarten">4. Grade</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" name="fifthgrade" value="fifthgrade">
+                  <label for="kindergarten">5. Grade</label>
+                </div>
+
+              </form>
+          </div>
+
+          <div id="selectdifficulty">
+            <select id="selectdifficultydropdown">
+                <option value="0">Select difficulty</option>
+                <option value="1">Normal lesson</option>
+                <option value="2">Moderate lesson</option>
+                <option value="3">Hard lesson</option>
+            </select>
+          </div>
+
+          <div id="choosetime">
+            <select id="choosetimedropdown">
+                <option value="0">Choose a time estimate</option>
+                <option value="1">30 minutes</option>
+                <option value="2">90 minutes</option>
+                <option value="3">145 minutes</option>
+            </select>
+          </div>
+
+          <div id="addmaterialdiv">
+              <div>
+                <p> Add material </p>
+              </div>
+
+              <div>
+                <img src="assets/images/add.png" alt="add icon">
+              </div>
+          </div>
+
+          <div id="writedescription">
+              <textarea type="text" id="descriptiontextarea" placeholder="Write a description"> </textarea>
+          </div>
+
+          <div>
+            <button type="button" name="button" id="savebutton" class="standardbutton"> Save </button>
+          </div>
+        </div>
+        </section>
 
     </main>
     <footer>

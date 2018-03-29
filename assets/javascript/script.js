@@ -65,3 +65,8 @@ function showMyLessons () {
   }
 
 }
+
+
+function showCreateNewLesson() {
+  createnewlesson.style.display = 'block';
+}
