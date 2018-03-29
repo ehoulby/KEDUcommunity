@@ -71,7 +71,9 @@ function showCreateNewLesson() {
   createnewlesson.style.display = 'block';
 }
 
-document.getElementById("createnewlesson").addEventListener("click", function(event) {
+window.onclick = function hideCreateNewLesson(event) {
   var lessondiv = document.getElementById("createnewlesson");
+    if (event.target == lessondiv) {
         lessondiv.style.display = "none";
+    }
 }
