@@ -33,13 +33,37 @@
 
     <div id="selectgradelevel">
     <h1 class=""> Select grade level </h1>
-        <form action="" method="post">
-            <input type="checkbox" name="Kindergarten" value="Kindergarten" /> Kindergarten
-            <input type="checkbox" name="1Grade" value="1Grade" /> 1. Grade
-            <input type="checkbox" name="2Grade" value="2Grade" /> 2. Grade
-            <input type="checkbox" name="3Grade" value="3Grade" /> 3. Grade
-            <input type="checkbox" name="4Grade" value="4Grade" /> 4. Grade
-            <input type="checkbox" name="5Grade" value="5Grade" /> 5. Grade
+        <form>
+          <div>
+            <input type="checkbox" name="kindergarten" value="kindergarten">
+            <label for="kindergarten">Kindergarten</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="firstgrade" value="firstgrade">
+            <label for="firstgrade">1. Grade</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="secondgrade" value="secondgrade">
+            <label for="kindergarten">2. Grade</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="thirdgrade" value="thirdgrade">
+            <label for="kindergarten">3. Grade</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="fourthgrade" value="fourthgrade">
+            <label for="kindergarten">4. Grade</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="fifthgrade" value="fifthgrade">
+            <label for="kindergarten">5. Grade</label>
+          </div>
+
         </form>
     </div>
 
@@ -58,8 +82,15 @@
           <option value="1">30 minutes</option>
           <option value="2">90 minutes</option>
           <option value="3">145 minutes</option>
-          
       </select>
+    </div>
+
+    <div id="addmatieraldiv">
+      <p> Add material <img src="assets/images/add.png" alt="add icon"></p>
+    </div>
+
+    <div id="writedescription">
+        <textarea type="text" id="yourmessage" placeholder="Write a description"> </textarea>
     </div>
 
 
