@@ -9,17 +9,60 @@
   <link rel="stylesheet" href="assets/css/master.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:100i,400,700" rel="stylesheet">
 </head>
+
 <main>
   <section id="createnewlesson">
-    <input type="text" placeholder="Name of lesson">
-    <select>
-        <option value="0">Select a category</option>
-        <option value="1">Math</option>
-        <option value="2">Science</option>
-        <option value="3">Danish</option>
-        <option value="4">History</option>
-        <option value="5">English</option>
-    </select>
-    
+    <div id="createnewlessonheadline">
+      <h1 class="boldheadline"> CREATE NEW LESSON </h1>
+    </div>
+
+    <div id="nameoflesson">
+      <input type="text" placeholder="Name of lesson">
+    </div>
+
+    <div id="selectcategory">
+      <select>
+          <option value="0">Select a category</option>
+          <option value="1">Math</option>
+          <option value="2">Science</option>
+          <option value="3">Danish</option>
+          <option value="4">History</option>
+          <option value="5">English</option>
+      </select>
+    </div>
+
+    <div id="selectgradelevel">
+    <h1 class=""> Select grade level </h1>
+        <form action="" method="post">
+            <input type="checkbox" name="Kindergarten" value="Kindergarten" /> Kindergarten
+            <input type="checkbox" name="1Grade" value="1Grade" /> 1. Grade
+            <input type="checkbox" name="2Grade" value="2Grade" /> 2. Grade
+            <input type="checkbox" name="3Grade" value="3Grade" /> 3. Grade
+            <input type="checkbox" name="4Grade" value="4Grade" /> 4. Grade
+            <input type="checkbox" name="5Grade" value="5Grade" /> 5. Grade
+        </form>
+    </div>
+
+    <div id="selectdifficulty">
+      <select>
+          <option value="0">Select difficulty</option>
+          <option value="1">Normal lesson</option>
+          <option value="2">Moderate lesson</option>
+          <option value="3">Hard lesson</option>
+      </select>
+    </div>
+
+    <div id="choosetime">
+      <select>
+          <option value="0">Choose a time estimate</option>
+          <option value="1">30 minutes</option>
+          <option value="2">90 minutes</option>
+          <option value="3">145 minutes</option>
+          
+      </select>
+    </div>
+
+
+
   </section>
 </main>
