@@ -156,18 +156,17 @@ li a:hover {
   margin-top: 50px;
   flex-direction: column;
   margin: 0;
-
+  background-color: #f7f7f7;
   width: 100%;
 }
 
-
-#guidecontainer img {
-  margin-top: 70px;
+.backgroundimg {
+  background-repeat: no-repeat;
+  z-index:-100;
+  background-image: image("assets/images/keducommunity.jpg");
 }
 
 #slogan {
-  margin: 0;
-  padding: 2px 0 0 0;
   font-weight: 100;
   font-style: italic;
   font-size: 17px;
@@ -179,29 +178,31 @@ li a:hover {
 
 .boldheadline {
 margin: 20px 0 0 0;
-color: white;
-font-size: 70px;
+color: #044c7f;
+font-size: 33px;
 }
 
-#guide {
-  font-size: 17px;
+.guide {
+  font-size: 20px;
   line-height: 33px;
   text-align: justify;
+}
+
+#guideindex {
   position: absolute;
   top: 350px;
   left: 100px;
   width: 50%;
   color: white;
-
 }
 
 #indexheadline {
   position: absolute;
   top: 200px;
   left: 100px;
+  color: white;
+font-size: 70px;
 }
-
-
 /* -------- 2.2 FOUR OPTIONS GRID  --------- */
 
 #fouroptions {
