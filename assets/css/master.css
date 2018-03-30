@@ -155,10 +155,14 @@ li a:hover {
   display: flex;
   margin-top: 50px;
   flex-direction: column;
-  padding: 90px 130px;
   margin: 0;
-  background-color: #f7f7f7;
 
+  width: 100%;
+}
+
+
+#guidecontainer img {
+  margin-top: 70px;
 }
 
 #slogan {
@@ -167,19 +171,36 @@ li a:hover {
   font-weight: 100;
   font-style: italic;
   font-size: 17px;
+  position: absolute;
+  top: 300px;
+  left: 100px;
+  color: white;
 }
 
 .boldheadline {
 margin: 20px 0 0 0;
-color: #044c7f;
-font-size: 33px;
+color: white;
+font-size: 70px;
 }
 
 #guide {
-  font-size: 20px;
+  font-size: 17px;
   line-height: 33px;
   text-align: justify;
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  width: 50%;
+  color: white;
+
 }
+
+#indexheadline {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}
+
 
 /* -------- 2.2 FOUR OPTIONS GRID  --------- */
 
