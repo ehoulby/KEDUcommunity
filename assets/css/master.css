@@ -369,6 +369,9 @@ font-size: 33px;
   display: flex;
   flex-direction: row;
   padding: 40px 0;
+  animation-name: slideup;
+  animation-duration: 1s;
+  transform: translateY(3%);
 }
 .boxes1{
   display: flex;
@@ -531,6 +534,10 @@ border-color: #eae9e9;
   outline: 0px;
 }
 
+#prompterrormessage {
+  display: inline;
+}
+
 #selectcategorydropdown{
   width: 350px;
   height: 40px;
@@ -656,7 +663,7 @@ button:focus { /*Fjerner den blå kant rundt om knapper*/
   padding: 0 130px;
   padding-bottom: 60px;
   padding-top: 40px;
-  transition: opacity 400ms ease-in;
+
 }
 
 
@@ -695,10 +702,12 @@ button:focus { /*Fjerner den blå kant rundt om knapper*/
 @keyframes slideup {
 0% {
   transform: translateY(10%);
+  opacity: 0;
 }
 
   100%  {
             transform: translateY(3%);
+            opacity: 1;
 
         }
 

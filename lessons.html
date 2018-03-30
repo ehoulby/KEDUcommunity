@@ -74,7 +74,7 @@
                 <div class="icons">
                     <div class="normallesson">
                       <img src="assets/images/kalender.png" alt="ikon1"  >
-                      <p id="normallessons">Normal Lesson</p>
+
                     </div>
 
                     <div class="time">
@@ -293,7 +293,7 @@
               </div>
 
               </div>
-</div>
+            </div>
         </section>
 
         <section id="createnewlesson">
@@ -303,7 +303,8 @@
           </div>
 
           <div id="nameoflesson">
-            <input id="nameoflessoninput"type="text" placeholder="Name of lesson">
+            <input id="nameoflessoninput"type="text" onblur="promptNameOnLesson()" placeholder="Name of lesson">
+              <span id="prompterrormessage"></span>
           </div>
 
           <div id="selectcategory">

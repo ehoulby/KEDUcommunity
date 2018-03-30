@@ -77,3 +77,15 @@ window.onclick = function hideCreateNewLesson(event) {
         lessondiv.style.display = "none";
     }
 }
+
+
+/*
+function promptNameOnLesson(){
+  var lessonname = document.getElementById("nameoflessoninput");
+  if (lessonname == '') {
+    document.getElementById("prompterrormessage").innerHTML = "Please fill out name";
+    document.getElementById("prompterrormessage").style.color = "red";
+  }
+}
+
+*/
