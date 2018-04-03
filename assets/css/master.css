@@ -808,3 +808,14 @@ padding-top: 40px;
 .comicons img {
   margin: 16px 0;
 }
+
+/* -------- 7. FORUM --------- */
+#forumsearch{
+border: 1px grey;
+width: 500px;
+height: 200px;
+font-size: 12px;
+padding-left: 10px;
+margin-right: 30px;
+box-shadow: 0 0 10px 0 grey;
+}
