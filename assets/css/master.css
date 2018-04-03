@@ -809,19 +809,28 @@ padding-top: 40px;
   margin: 16px 0;
 }
 
-<<<<<<< HEAD
+
 #banner{
   display: flex;
   flex-direction: column;
 }
 
+#mediabannerimg {
+  margin-top: 65px;
+}
+
 #mediaheadline{
   position: absolute;
+  top: 150px;
+  left: 100px;
+  color: white;
 }
 
 #mediap{
   position: absolute;
-=======
+  top: 200px;
+  left: 100px;
+}
 /* -------- 7. FORUM --------- */
 #forumsearch{
 border: 1px grey;
