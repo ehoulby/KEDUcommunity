@@ -808,3 +808,16 @@ padding-top: 40px;
 .comicons img {
   margin: 16px 0;
 }
+
+#banner{
+  display: flex;
+  flex-direction: column;
+}
+
+#mediaheadline{
+  position: absolute;
+}
+
+#mediap{
+  position: absolute;
+}
