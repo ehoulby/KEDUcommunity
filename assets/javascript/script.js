@@ -89,3 +89,7 @@ function promptNameOnLesson(){
 }
 
 */
+
+function showCreateNewPost() {
+  createnewlesson.style.display = 'block';
+}
