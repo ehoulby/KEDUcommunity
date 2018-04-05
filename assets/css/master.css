@@ -877,6 +877,8 @@ input:focus {
 
 }
 
+
+
 /* --------- 7.1 NY POST FORUM ------- */
 #nameofpostinput{
   height: 30px;
@@ -926,4 +928,54 @@ input:focus {
   box-shadow: 0px 3px 16px 0px rgba(50, 50, 50, 0.3);
   animation: slidein 1s;
   transform: translateY(3%);
+}
+
+/* ------- DIV DER VISER POSTS ------- */
+
+#forumpostscontainer {
+  background-color: #b9cedc;
+  border: 1px grey;
+  width: 80%;
+  font-size: 12px;
+  box-shadow: 0 0 10px 0 grey;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.titlewithcreatepost {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #1b5c90;
+}
+
+.recentpostsheadline {
+  color: white;
+  font-weight: 400;
+  padding: 10px 40px;
+}
+
+#createpostbutton {
+  align-self: center;
+  background-color: #1b5c90;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 10px 40px;
+  margin-top: 17px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+#createpostbutton:hover {
+  background-color: white;
+  color: #1b5c90;
+  border: 1px solid #1b5c90;
 }
