@@ -45,38 +45,65 @@
 
     </header>
     <main>
-      <section id="materialsintro">
+      <section id="forumcontainer">
         <h1 class="boldheadline">FORUM</h1>
         <p class="guide"> <i>Welcome to the forum!</i> <br>
           Discuss subjects and topics with the many users of KEDU.
         </p>
       </section>
-      <section id="forumsearch">
-        <h1 id="searchheadline">SEARCH THE FORUM</h1>
-        <form action=" / ?">
-        <input type="text" id="keywords" placeholder="Search by keywords">
 
-            <div id="selectsearch">
-              <select id="selectsearchdropdown">
+      <section id="forumsearch">
+        <div id="searchforumdiv">
+          <h1 id="searchheadline">SEARCH THE FORUM</h1>
+        </div>
+
+        <div id="keywordsdiv">
+          <input type="text" id="keywords" placeholder="Search by keywords">
+        </div>
+
+            <div class="searchdiv">
+              <select id="searchcategorydropdown">
                   <option value="0">Select a category</option>
                   <option value="1">Math</option>
                   <option value="2">Science</option>
                   <option value="3">Danish</option>
                   <option value="4">History</option>
                   <option value="5">English</option>
+                  <option value="6">Other</option>
               </select>
+            </div>
 
-</div>
-<div id="selectsearch">
-  <select id="selectsearchdropdown">
-      <option value="0">Now</option>
-      <option value="1">Two hours ago</option>
-      <option value="2">A day ago</option>
-      <option value="3">Last week</option>
-      <option value="4">Last month</option>
-  </select>
-  <br>
-        <button id="searchbutton" type="button"> <p> search </p> </button>
+            <div class="searchdiv">
+              <select id="searchtimedropdown">
+                  <option value="0">Now</option>
+                  <option value="1">Two hours ago</option>
+                  <option value="2">A day ago</option>
+                  <option value="3">Last week</option>
+                  <option value="4">Last month</option>
+                  <option value="4">Last month</option>
+              </select>
+            </div>
+
+            <div>
+              <button id="searchbutton" type="button" class="standardbutton"> Search </button>
+            </div>
+
+      </section>
+
+      <section>
+        <div class="titlewithcreatepost">
+          <div class="recentpostsheadline">
+            <h1>Recent post</h1>
+          </div>
+
+          <div class="createpost">
+            <button type="button" id="cretepostbutton" onclick="showCreateNewPost()"></button>
+          </div>
+        </div>
+
+        <div class="">
+
+        </div>
       </section>
 
       <section id="createnewpostparent">
@@ -91,7 +118,7 @@
           </div>
 
           <div id="selectcategory">
-            <select id="selectcategorydropdown">
+            <select id="selectforumcategorydropdown">
                 <option value="0">Select a category</option>
                 <option value="1">School subjects</option>
                 <option value="2">Science</option>
@@ -111,8 +138,9 @@
         </div>
       </section>
     </section>
+  </main>
 
-    </main>
+
     <footer>
       <div class="rowone">
         <div id="FAQ">
