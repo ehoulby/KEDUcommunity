@@ -90,6 +90,13 @@ function promptNameOnLesson(){
 
 */
 
-function showCreateNewPost() {
-  createnewlesson.style.display = 'block';
+function showCreateNewPost(){
+  createnewpostparent.style.display = 'block';
+}
+
+window.onclick = function hideCreateNewPost(event) {
+  var post = document.getElementById("createnewpostparent");
+    if (event.target == post) {
+        createnewpostparent.style.display = "none";
+    }
 }
