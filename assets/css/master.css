@@ -853,7 +853,7 @@ padding-top: 40px;
   margin: 16px 0;
 }
 
-
+/*----- MEDIA ----- */
 #banner{
   display: flex;
   flex-direction: column;
@@ -874,7 +874,20 @@ padding-top: 40px;
   position: absolute;
   top: 200px;
   left: 100px;
+  color: #fff;
 }
+
+#billede1{
+  position: absolute;
+  left: 100px;
+  top: 500px;
+}
+#billede2{
+  position: absolute;
+  right: 100px;
+  top: 500px;
+}
+
 /* -------- 7. FORUM --------- */
 #forumsearch{
 border: 1px grey;
