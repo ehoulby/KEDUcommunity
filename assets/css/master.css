@@ -625,6 +625,13 @@ border-color: #eae9e9;
   font-size: 14px;
   margin-top: 30px;
 }
+
+.addicons1{
+  margin-top: 20px;
+}
+.addicons2{
+  margin-top: 20px;
+}
 /* -------- 6 MATERIALS -------- */
 
 /* -------- 6.1 MATERIALS INTRO BOKS og TABS -------- */
@@ -699,6 +706,10 @@ button:focus { /*Fjerner den blå kant rundt om knapper*/
 
 .downloadicondiv img {
   margin: 16px 0;
+}
+.downloadicondiv:hover{
+  opacity: 0.5;
+    filter: alpha(opacity=50);
 }
 
 .materialdiv img {
@@ -783,6 +794,35 @@ padding-top: 40px;
   margin: 16px 0;
 }
 
+#addicon:hover{
+  opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#editicon:hover{
+  opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#deleteicon:hover{
+  opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.downloadicon:hover{
+  opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#shareicon:hover{
+  opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#likeicon:hover{
+  opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#commenticon:hover{
+  opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
 /* -------- 6.4 COMMUNITY MATERIAL TAB -------- */
 #communitymaterial{
   padding: 0 130px;
@@ -795,6 +835,10 @@ padding-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+#comfile1:hover, #comfile2:hover, #comfile3:hover{
+  background-color: #f1f1f1;
+  color: #b9cedc;
 }
 
 #comfile1 {
