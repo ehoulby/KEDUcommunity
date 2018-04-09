@@ -256,7 +256,6 @@ font-size: 70px;
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   background-color: #044c7f;
   color: white;
   padding: 0 0 50px 0;
@@ -266,18 +265,15 @@ footer p {
   font-weight: 400;
 }
 
-footer h1 {
+footer h2 {
   margin-top: 50px;
 }
 
-/* -------- 3.1 FAQ  --------- */
-#faqcontainer {
-  padding-right: 400px;
-}
+
 
 /* -------- 3.2 CONTACT INFORMATION  --------- */
 #yourmessage{
-  height: 300px;
+  height: 200px;
   width: 350px;
 }
 
@@ -304,11 +300,33 @@ footer h1 {
   margin: 5px 20px;
 }
 
+.contactform{
+  padding-left: 20px;
+}
 
-
-.contactform h1{
+.contactform h2{
   margin-top: 50px;
   margin-left: 20px;
+}
+.aboutfooter{
+  width: 300px;
+  padding-left: 20px;
+}
+#adress{
+  width: 100%;
+  text-align: center;
+
+}
+.linksfooter a{
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.footer1{
+  display: flex;
+  flex-direction: row;
 }
 
 /*--------- 4. lessons ---------*/
