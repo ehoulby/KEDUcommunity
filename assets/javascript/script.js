@@ -71,32 +71,23 @@ function showCreateNewLesson() {
   createnewlesson.style.display = 'block';
 }
 
-window.onclick = function hideCreateNewLesson(event) {
-  var lessondiv = document.getElementById("createnewlesson");
-    if (event.target == lessondiv) {
-        lessondiv.style.display = "none";
-    }
-}
 
-
-/*
-function promptNameOnLesson(){
-  var lessonname = document.getElementById("nameoflessoninput");
-  if (lessonname == '') {
-    document.getElementById("prompterrormessage").innerHTML = "Please fill out name";
-    document.getElementById("prompterrormessage").style.color = "red";
-  }
-}
-
-*/
 
 function showCreateNewPost(){
   createnewpostparent.style.display = 'block';
 }
 
-window.onclick = function hideCreateNewPost(event) {
-  var post = document.getElementById("createnewpostparent");
+
+window.addEventListener("click", function(event) {
+    var post = document.getElementById("createnewpostparent");
     if (event.target == post) {
         createnewpostparent.style.display = "none";
     }
-}
+});
+
+window.addEventListener("click", function(event) {
+var lessondiv = document.getElementById("createnewlesson");
+  if (event.target == lessondiv) {
+      lessondiv.style.display = "none";
+  }
+});
