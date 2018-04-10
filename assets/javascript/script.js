@@ -77,7 +77,7 @@ function showCreateNewPost(){
   createnewpostparent.style.display = 'block';
 }
 
-
+/*
 window.addEventListener("click", function(event) {
     var post = document.getElementById("createnewpostparent");
     if (event.target == post) {
@@ -91,3 +91,16 @@ var lessondiv = document.getElementById("createnewlesson");
       lessondiv.style.display = "none";
   }
 });
+/*
+function submitNewPost() {
+var inputName = document.getElementById("nameofpostinput");
+localStorage.setItem = ("postName", inputName.value);
+
+var selectCategory = document.getElementById("selectforumcategorydropdown");
+localStorage.setItem = ("postCategory", selectCategory.value);
+
+var textArea = document.getElementById("usertextarea");
+localStorage.setItem = "postTextArea", textArea.value);
+
+document.getElementById("userposts").innerHTML = "Title: " + localStorage.getItem("inputName"); 
+}
