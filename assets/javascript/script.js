@@ -77,7 +77,7 @@ function showCreateNewPost(){
   createnewpostparent.style.display = 'block';
 }
 
-/*
+
 window.addEventListener("click", function(event) {
     var post = document.getElementById("createnewpostparent");
     if (event.target == post) {
@@ -102,5 +102,5 @@ localStorage.setItem = ("postCategory", selectCategory.value);
 var textArea = document.getElementById("usertextarea");
 localStorage.setItem = "postTextArea", textArea.value);
 
-document.getElementById("userposts").innerHTML = "Title: " + localStorage.getItem("inputName"); 
+document.getElementById("userposts").innerHTML = "Title: " + localStorage.getItem("inputName");9
 }
