@@ -144,16 +144,31 @@ document.getElementById("nameofpostinput").value = "";
 document.getElementById("usertextarea").value = "";
 document.getElementById("selectforumcategorydropdown").value = 0;
 var postsList = JSON.parse( localStorage.getItem("posts"));
-var div = document.createElement('div');
+
 
         for(var i=0; i < posts.length; i++) {
-          document.getElementById("userposts").appendChild(div);
+          var dt = document.createElement("div");
+          dt.innerText = postsList[i].topic;
+
+          var dm = document.createElement ("div");
+          dm.innerText = postsList[i].message;
+
+          var dc = document.createElement("div");
+          dc.innerText = postsList[i].category;
+
+          /*
           document.getElementById("posttitle").innerHTML += postsList[i].topic;
           document.getElementById("postmessage").innerHTML += postsList[i].message;
           document.getElementById("postcategory").innerHTML += postsList[i].category;
-          
-        createnewpostparent.style.display = 'none';
-        userposts.style.display = 'block';
+          */
+
+          var posts = document.getElementById("userposts");
+          posts.appendChild(dt);
+          posts.appendChild(dm);
+          posts.appendChild(dc);
+
+          createnewpostparent.style.display = 'none';
+          userposts.style.display = 'block';
 
 }
 
