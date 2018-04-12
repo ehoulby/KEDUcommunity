@@ -138,7 +138,6 @@ var posts = [{
 
     localStorage.setItem("posts", JSON.stringify(posts));
 
-//get
 
 document.getElementById("nameofpostinput").value = "";
 document.getElementById("usertextarea").value = "";
@@ -147,38 +146,38 @@ var postsList = JSON.parse( localStorage.getItem("posts"));
 
 
         for(var i=0; i < posts.length; i++) {
-          var dt = document.createElement("div");
-          dt.innerText = postsList[i].topic;
 
-          var dm = document.createElement ("div");
-          dm.innerText = postsList[i].message;
 
-          var dc = document.createElement("div");
-          dc.innerText = postsList[i].category;
+  var div = document.createElement("div");
 
-          /*
-          document.getElementById("posttitle").innerHTML += postsList[i].topic;
-          document.getElementById("postmessage").innerHTML += postsList[i].message;
-          document.getElementById("postcategory").innerHTML += postsList[i].category;
-          */
 
-          var posts = document.getElementById("userposts");
-          posts.appendChild(dt);
-          posts.appendChild(dm);
-          posts.appendChild(dc);
+  var h1 = document.createElement("h1");
+  h1.innerHTML = postsList[i].topic;
+  div.appendChild(h1);
 
-          createnewpostparent.style.display = 'none';
-          userposts.style.display = 'block';
+  p1 = document.createElement("p");
+  var string = postsList[i].message;
+  var reducedText = string.slice(0, 50) + "...";
+  p1.innerHTML = reducedText;
+  div.appendChild(p1);
+
+
+  p2 = document.createElement("p");
+  p2.innerHTML = postsList[i].category;
+  div.appendChild(p2);
+
+
+  document.getElementById("posts").appendChild(div);
+  div.style = "background-color: white; font-weight: 400; margin: 20px 25px ;padding: 10px 25px ; box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.59);"
+  h1.style = "font-size: 40px;";
+  p1.style = "font-size: 15px; font-weight: 100;";
+  p2.style = "font-weight: 100; color: grey;";
+
+  createnewpostparent.style.display = 'none';
+
+
+  var string = postsList[i].message;
+  var reducedText = (0, 20) + "....";
 
 }
-
-}
-
-function test () {
-    var div = document.createElement("div");
-    div.appendChild(document.document.getElementById("posttitle")).innerHTML += postsList[i].topic;
-    div.appendChild(document.getElementById("postmessage")).innerHTML += postsList[i].message;
-    div.appendChild(document.getElementById("postcategory")).innerHTML += postsList[i].category;
-    document.getElementById('userposts').appendChild('div');
-
 }
