@@ -77,7 +77,7 @@ function showCreateNewPost(){
   createnewpostparent.style.display = 'block';
 }
 
-
+/*----------- close window ----------*/
 window.addEventListener("click", function(event) {
     var post = document.getElementById("createnewpostparent");
     if (event.target == post) {
@@ -91,16 +91,79 @@ var lessondiv = document.getElementById("createnewlesson");
       lessondiv.style.display = "none";
   }
 });
-/*
+/*---------------------*//*
+  function submitNewPost() {
+        var name = document.getElementById('nameofpostinput').value;
+        localStorage.setItem('userPost', name);
+
+        var category = document.getElementById('selectforumcategorydropdown').value;
+        localStorage.setItem('userCategory', category);
+
+        var message = document.getElementById('usertextarea').value;
+        localStorage.setItem('userMessage', message);
+
+
+        var title = localStorage.getItem('userPost');
+        var forumcategory = localStorage.getItem('userCategory');
+        var forummessage = localStorage.getItem('userMessage');
+
+        document.getElementById("posttitle").innerHTML = title;
+        document.getElementById("postcategory").innerHTML = forumcategory;
+        document.getElementById("postmessage").innerHTML = forummessage;
+
+
+        createnewpostparent.style.display = 'none';
+        }
+
+
+var post = {
+
+            message:"Doe",
+            category:50,
+            eyeColor:"blue"};
+
+*/
+
 function submitNewPost() {
-var inputName = document.getElementById("nameofpostinput");
-localStorage.setItem = ("postName", inputName.value);
 
-var selectCategory = document.getElementById("selectforumcategorydropdown");
-localStorage.setItem = ("postCategory", selectCategory.value);
 
-var textArea = document.getElementById("usertextarea");
-localStorage.setItem = "postTextArea", textArea.value);
+var posts = [{
+        topic: document.getElementById("nameofpostinput").value,
+        message: document.getElementById("usertextarea").value,
+        category: document.getElementById("selectforumcategorydropdown").value
 
-document.getElementById("userposts").innerHTML = "Title: " + localStorage.getItem("inputName");9
+    }];
+
+
+
+    localStorage.setItem("posts", JSON.stringify(posts));
+
+//get
+
+document.getElementById("nameofpostinput").value = "";
+document.getElementById("usertextarea").value = "";
+document.getElementById("selectforumcategorydropdown").value = 0;
+var postsList = JSON.parse( localStorage.getItem("posts"));
+var div = document.createElement('div');
+
+        for(var i=0; i < posts.length; i++) {
+          document.getElementById("userposts").appendChild(div);
+          document.getElementById("posttitle").innerHTML += postsList[i].topic;
+          document.getElementById("postmessage").innerHTML += postsList[i].message;
+          document.getElementById("postcategory").innerHTML += postsList[i].category;
+          
+        createnewpostparent.style.display = 'none';
+        userposts.style.display = 'block';
+
+}
+
+}
+
+function test () {
+    var div = document.createElement("div");
+    div.appendChild(document.document.getElementById("posttitle")).innerHTML += postsList[i].topic;
+    div.appendChild(document.getElementById("postmessage")).innerHTML += postsList[i].message;
+    div.appendChild(document.getElementById("postcategory")).innerHTML += postsList[i].category;
+    document.getElementById('userposts').appendChild('div');
+
 }
