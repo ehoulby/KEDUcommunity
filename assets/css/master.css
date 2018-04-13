@@ -251,6 +251,104 @@ font-size: 70px;
 }
 
 
+#boxesdashboard{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.forumcontainer1{
+border: 1px grey;
+width: 30%;
+font-size: 12px;
+box-shadow: 0 0 10px 0 grey;
+display: flex;
+flex-direction: column;
+margin: auto;
+margin-top: 50px;
+margin-bottom: 60px;
+}
+
+.forumcontainer2 {
+background-color: #1b5c90;
+color: white;
+font-size: 14px;
+}
+
+.materialscontainer1{
+border: 1px grey;
+width: 30%;
+font-size: 12px;
+box-shadow: 0 0 10px 0 grey;
+display: flex;
+flex-direction: column;
+margin: auto;
+margin-top: 50px;
+margin-bottom: 60px;
+}
+
+.materialscontainer2 {
+background-color: #1b5c90;
+color: white;
+font-size: 14px;
+}
+
+.lessonscontainer1{
+border: 1px grey;
+width: 30%;
+font-size: 12px;
+box-shadow: 0 0 10px 0 grey;
+display: flex;
+flex-direction: column;
+margin: auto;
+margin-top: 50px;
+margin-bottom: 60px;
+}
+
+.lessonscontainer2 {
+background-color: #1b5c90;
+color: white;
+font-size: 14px;
+}
+
+.contentforumcontainer1{
+  border: 1px grey solid;
+  width: 96%;
+  margin: auto;
+  font-size: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contentforumcontainer1 h1{
+  color: #00a19b;
+  padding-left: 10px;
+}
+
+.contentforumcontainer1 p{
+  padding-left: 10px;
+}
+.forumcontainer1 .forumcontainer2 h1{
+  padding-left: 10px;
+}
+.materialscontainer1 .materialscontainer2 h1{
+  padding-left: 10px;
+}
+.lessonscontainer1 .lessonscontainer2 h1{
+  padding-left: 10px;
+}
+
+.contentforumcontainer1{
+  border: 1px grey solid;
+  width: 96%;
+  margin: auto;
+  font-size: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contentforumcontainer1 h1{
+  color: #00a19b;
+  padding-left: 10px;
+}
 
 /* -------- 3. FOOTER  --------- */
 footer {
