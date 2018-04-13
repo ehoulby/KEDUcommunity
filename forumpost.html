@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>KEDU Forum</title>
+    <link rel="icon" type="image/png" sizes="12x12" href="assets/images/favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta description="">
+    <script type="text/javascript" src="assets/javascript/script.js"> </script>
+    <link rel="stylesheet" href="assets/css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100i,400,700" rel="stylesheet">
+  </head>
+
+  <body id="forumpost" >
+    <header>
+      <a href="index.html" id="logo">
+      <img src="assets/images/kedulogo.png" alt="logo" >
+      </a>
+      <nav>
+                  <div class="dashboard-dropdown">
+                    <a href="index.html"> <button class="dashbutton">DASHBOARD</button></a>
+                      <div class="dash-content">
+                          <a href="forum.html">FORUM</a>
+                          <a href="materials.html">MATERIALS</a>
+                          <a href="media.html">MEDIA</a>
+                      </div>
+                 </div>
+              <ul>
+                    <li><a href="lessons.html">LESSONPLANS</a></li>
+                    <li><a href="https://www.kubo.education/#training">TRAINING</a></li>
+                    <li><a href="https://www.kubo.education/#manuals">MANUALS</a></li>
+              </ul>
+      </nav>
+
+      <div id="userinfo">
+          <img src="assets/images/usericon.png" alt="ikon" id="usericon" >
+          <div class="dashboard-dropdown" id="user-dropdown">
+              <button class="dashbutton"><p>EMILIE HOULBY</p></button>
+              <div class="dash-content">
+                  <a href="#">MY PROFILE</a>
+                  <a href="#">CHANGE PASSWORD</a>
+                  <a href="#">LOG OUT</a>
+              </div>
+          </div>
+      </div>
+
+    </header>
+
+    <main>
+      <div class="mypost" onload="displayMyPost()">
+          <h1 id="myposttitle" onload="displayMyPost()"></h1>
+          <p id="mypostmessage" onload="displayMyPost()"></p>
+          <p id="mypostcategory" onload="displayMyPost()"></p>
+      </div>
+    </main>
+
+  </body>
+  </html>

@@ -1115,3 +1115,8 @@ input:focus {
 #postmessage, #postcategory {
   font-size: 14px;
 }
+
+/* --------- FORUM POST ON CLICK --------- */
+#forumpost {
+  background-color: #b9cedc;
+}

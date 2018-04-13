@@ -91,38 +91,7 @@ var lessondiv = document.getElementById("createnewlesson");
       lessondiv.style.display = "none";
   }
 });
-/*---------------------*//*
-  function submitNewPost() {
-        var name = document.getElementById('nameofpostinput').value;
-        localStorage.setItem('userPost', name);
 
-        var category = document.getElementById('selectforumcategorydropdown').value;
-        localStorage.setItem('userCategory', category);
-
-        var message = document.getElementById('usertextarea').value;
-        localStorage.setItem('userMessage', message);
-
-
-        var title = localStorage.getItem('userPost');
-        var forumcategory = localStorage.getItem('userCategory');
-        var forummessage = localStorage.getItem('userMessage');
-
-        document.getElementById("posttitle").innerHTML = title;
-        document.getElementById("postcategory").innerHTML = forumcategory;
-        document.getElementById("postmessage").innerHTML = forummessage;
-
-
-        createnewpostparent.style.display = 'none';
-        }
-
-
-var post = {
-
-            message:"Doe",
-            category:50,
-            eyeColor:"blue"};
-
-*/
 
 function submitNewPost() {
 
@@ -168,16 +137,26 @@ var postsList = JSON.parse( localStorage.getItem("posts"));
 
 
   document.getElementById("posts").appendChild(div);
-  div.style = "background-color: white; font-weight: 400; margin: 20px 25px ;padding: 10px 25px ; box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.59);"
+  div.style = "background-color: white; font-weight: 400; margin: 20px 25px ;padding: 10px 25px ; box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.59); cursor: pointer;"
   h1.style = "font-size: 40px;";
   p1.style = "font-size: 15px; font-weight: 100;";
   p2.style = "font-weight: 100; color: grey;";
 
   createnewpostparent.style.display = 'none';
-
-
-  var string = postsList[i].message;
-  var reducedText = (0, 20) + "....";
-
+  div.setAttribute('onclick', 'location.href = "forumpost.html"');
 }
+}
+
+
+function displayMyPost(){
+  var post = JSON.parse( localStorage.getItem("posts"));
+  data.items[1].name;
+  var title = post.category[0];
+  var message = posts.message[0];
+  var category = posts.category[0];
+
+  document.getElementById("myposttitle").innerHTML = title;
+  document.getElementById("mypostmessage").innerHTML = message;
+  document.getElementById("mypostcategory").innerHTML = category;
+
 }
