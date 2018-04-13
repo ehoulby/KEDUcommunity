@@ -93,68 +93,65 @@ var lessondiv = document.getElementById("createnewlesson");
 });
 
 
+
+
 function submitNewPost() {
-  var date = new Date ();
-
-
-var posts = [{
-        topic: document.getElementById("nameofpostinput").value,
-        message: document.getElementById("usertextarea").value,
-        category: document.getElementById("selectforumcategorydropdown").value
-
-
-    }];
+var date = new Date();
 
 
 
-    localStorage.setItem("posts", JSON.stringify(posts));
+
+
+
+posts = JSON.parse(localStorage.getItem("posts")) || [];
+posts.push ({
+
+              topic: document.getElementById("nameofpostinput").value,
+              message: document.getElementById("usertextarea").value,
+              category: document.getElementById("selectforumcategorydropdown").value,
+              time: date
+});
+localStorage.setItem("posts", JSON.stringify(posts));
+
 
 
 document.getElementById("nameofpostinput").value = "";
 document.getElementById("usertextarea").value = "";
 document.getElementById("selectforumcategorydropdown").value = 0;
-var postsList = JSON.parse( localStorage.getItem("posts"));
+ //retrieving array
+
+    for(var i=0; i < posts.length; i++) {
+        var div = document.createElement("div");
+
+        var h1 = document.createElement("h1");
+        h1.innerHTML = posts[i].topic;
+        div.appendChild(h1);
+
+        p1 = document.createElement("p");
+        var string = posts[i].message;
+        var reducedText = string.slice(0, 50) + "...";
+        p1.innerHTML = reducedText;
+        div.appendChild(p1);
+
+        p2 = document.createElement("p");
+        p2.innerHTML = posts[i].category;
+        div.appendChild(p2);
 
 
-        for(var i=0; i < posts.length; i++) {
+        p3 = document.createElement("p");
+        p3.innerHTML = posts[i].date;
+        div.appendChild(p3);
 
 
-  var div = document.createElement("div");
+        document.getElementById("posts").appendChild(div);
+        div.style = "background-color: white; font-weight: 400; margin: 20px 25px ;padding: 10px 25px ; box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.59); cursor: pointer;"
+        h1.style = "font-size: 40px;";
+        p1.style = "font-size: 15px; font-weight: 100;";
+        p2.style = "font-weight: 100; color: grey;";
+        p3.style = "font-weight"
 
-
-  var h1 = document.createElement("h1");
-  h1.innerHTML = postsList[i].topic;
-  div.appendChild(h1);
-
-  p1 = document.createElement("p");
-  var string = postsList[i].message;
-  var reducedText = string.slice(0, 50) + "...";
-  p1.innerHTML = reducedText;
-  div.appendChild(p1);
-
-
-  p2 = document.createElement("p");
-  p2.innerHTML = postsList[i].category;
-  div.appendChild(p2);
-
-  var date = new Date();
-  p3 = document.createElement("p");
-  p3.innerHTML = date;
-  div.appendChild(p3);
-
-
-  document.getElementById("posts").appendChild(div);
-  div.style = "background-color: white; font-weight: 400; margin: 20px 25px ;padding: 10px 25px ; box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.59); cursor: pointer;"
-  h1.style = "font-size: 40px;";
-  p1.style = "font-size: 15px; font-weight: 100;";
-  p2.style = "font-weight: 100; color: grey;";
-
-
-
-
-
-  createnewpostparent.style.display = 'none';
-  div.setAttribute('onclick', 'location.href = "forumpost.html"');
+        createnewpostparent.style.display = 'none';
+        div.setAttribute('onclick', 'location.href = "forumpost.html"');
 }
 }
 
@@ -170,5 +167,9 @@ function displayMyPost(){
   document.getElementById("mypostmessage").innerHTML = message;
   document.getElementById("mypostcategory").innerHTML = category;
 
+
+}
+
+function saveMyLesson() {
 
 }

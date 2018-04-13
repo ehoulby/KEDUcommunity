@@ -1202,7 +1202,6 @@ input:focus {
   font-weight: 400;
   margin: 20px 25px ;
   padding: 10px 25px ;
-  display: none;
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.59);
 }
 
@@ -1217,4 +1216,8 @@ input:focus {
 /* --------- FORUM POST ON CLICK --------- */
 #forumpost {
   background-color: #b9cedc;
+}
+
+#forumheader {
+  display: none;
 }
