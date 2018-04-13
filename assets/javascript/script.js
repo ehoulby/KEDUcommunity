@@ -94,12 +94,14 @@ var lessondiv = document.getElementById("createnewlesson");
 
 
 function submitNewPost() {
+  var date = new Date ();
 
 
 var posts = [{
         topic: document.getElementById("nameofpostinput").value,
         message: document.getElementById("usertextarea").value,
         category: document.getElementById("selectforumcategorydropdown").value
+
 
     }];
 
@@ -135,12 +137,21 @@ var postsList = JSON.parse( localStorage.getItem("posts"));
   p2.innerHTML = postsList[i].category;
   div.appendChild(p2);
 
+  var date = new Date();
+  p3 = document.createElement("p");
+  p3.innerHTML = date;
+  div.appendChild(p3);
+
 
   document.getElementById("posts").appendChild(div);
   div.style = "background-color: white; font-weight: 400; margin: 20px 25px ;padding: 10px 25px ; box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.59); cursor: pointer;"
   h1.style = "font-size: 40px;";
   p1.style = "font-size: 15px; font-weight: 100;";
   p2.style = "font-weight: 100; color: grey;";
+
+
+
+
 
   createnewpostparent.style.display = 'none';
   div.setAttribute('onclick', 'location.href = "forumpost.html"');
@@ -149,14 +160,15 @@ var postsList = JSON.parse( localStorage.getItem("posts"));
 
 
 function displayMyPost(){
-  var post = JSON.parse( localStorage.getItem("posts"));
-  data.items[1].name;
-  var title = post.category[0];
-  var message = posts.message[0];
-  var category = posts.category[0];
+  var post = JSON.parse(localStorage.getItem("posts"));
+
+  var title = post.topic;
+  var message = post.message;
+  var category = post.category;
 
   document.getElementById("myposttitle").innerHTML = title;
   document.getElementById("mypostmessage").innerHTML = message;
   document.getElementById("mypostcategory").innerHTML = category;
+
 
 }
