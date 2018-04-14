@@ -98,29 +98,21 @@ var lessondiv = document.getElementById("createnewlesson");
 function submitNewPost() {
 var date = new Date();
 
-
-
-
-
-
-posts = JSON.parse(localStorage.getItem("posts")) || [];
+posts = JSON.parse(localStorage.getItem('posts')) || [];
 posts.push ({
 
-              topic: document.getElementById("nameofpostinput").value,
-              message: document.getElementById("usertextarea").value,
-              category: document.getElementById("selectforumcategorydropdown").value,
-              time: date
-});
-localStorage.setItem("posts", JSON.stringify(posts));
+                topic: document.getElementById("nameofpostinput").value,
+                message: document.getElementById("usertextarea").value,
+                category: document.getElementById("selectforumcategorydropdown").value,
+                time: date });
 
-
-
+localStorage.setItem('posts', JSON.stringify(posts));
+/*
 document.getElementById("nameofpostinput").value = "";
 document.getElementById("usertextarea").value = "";
-document.getElementById("selectforumcategorydropdown").value = 0;
- //retrieving array
+document.getElementById("selectforumcategorydropdown").value = 0;*/
 
-    for(var i=0; i < posts.length; i++) {
+for(var i=0; i < posts.length; i++) {
         var div = document.createElement("div");
 
         var h1 = document.createElement("h1");
@@ -138,23 +130,18 @@ document.getElementById("selectforumcategorydropdown").value = 0;
         div.appendChild(p2);
 
 
-        p3 = document.createElement("p");
-        p3.innerHTML = posts[i].date;
-        div.appendChild(p3);
-
 
         document.getElementById("posts").appendChild(div);
         div.style = "background-color: white; font-weight: 400; margin: 20px 25px ;padding: 10px 25px ; box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.59); cursor: pointer;"
         h1.style = "font-size: 40px;";
         p1.style = "font-size: 15px; font-weight: 100;";
         p2.style = "font-weight: 100; color: grey;";
-        p3.style = "font-weight"
 
         createnewpostparent.style.display = 'none';
         div.setAttribute('onclick', 'location.href = "forumpost.html"');
 }
 }
-
+/*
 
 function displayMyPost(){
   var post = JSON.parse(localStorage.getItem("posts"));
@@ -172,4 +159,4 @@ function displayMyPost(){
 
 function saveMyLesson() {
 
-}
+}*/
