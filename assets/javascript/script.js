@@ -132,31 +132,106 @@ for(var i=0; i < posts.length; i++) {
 
 
         document.getElementById("posts").appendChild(div);
-        div.style = "background-color: white; font-weight: 400; margin: 20px 25px ;padding: 10px 25px ; box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.59); cursor: pointer;"
+        div.style = "background-color: white; font-weight: 400; margin: 20px 25px ;padding: 10px 25px ; box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.59); "
         h1.style = "font-size: 40px;";
         p1.style = "font-size: 15px; font-weight: 100;";
         p2.style = "font-weight: 100; color: grey;";
 
         createnewpostparent.style.display = 'none';
-        div.setAttribute('onclick', 'location.href = "forumpost.html"');
-}
-}
-/*
-
-function displayMyPost(){
-  var post = JSON.parse(localStorage.getItem("posts"));
-
-  var title = post.topic;
-  var message = post.message;
-  var category = post.category;
-
-  document.getElementById("myposttitle").innerHTML = title;
-  document.getElementById("mypostmessage").innerHTML = message;
-  document.getElementById("mypostcategory").innerHTML = category;
-
 
 }
+}
 
-function saveMyLesson() {
 
-}*/
+function saveMyLessons(){
+lessons = JSON.parse(localStorage.getItem('lessons')) || [];
+lessons.push ({ title: document.getElementById("nameoflessoninput").value,
+                difficulty: document.getElementById("selectlessoncategorydropdown").value,
+                duration: document.getElementById("chooselessontimedropdown").value,
+                subject: document.getElementById("selectlessoncategorydropdown").value,
+                grade: document.getElementById("selectgradelevelcheckbox").value
+                });
+
+localStorage.setItem('lessons', JSON.stringify(lessons));
+
+
+/*all the divs*/
+var outerdiv = document.createElement("div");
+var innerdiv = document.createElement("div");
+var lessondiv = document.createElement("div");
+var timediv = document.createElement("div");
+var subjectdiv = document.createElement("div");
+var gradediv = document.createElement("div");
+
+/*all the images*/
+var diffimg = document.createElement("IMG");
+diffimg.setAttribute("src", "assets/images/kalender.png");
+
+var duraimg = document.createElement("IMG");
+duraimg.setAttribute("src", "assets/images/ur.png");
+
+var subimg = document.createElement("IMG");
+subimg.setAttribute("src", "assets/images/bogmærke.png");
+
+var gradimg = document.createElement("IMG");
+gradimg.setAttribute("src", "assets/images/stjerne.png");
+
+/*all p's and headlines*/
+var h3 = document.createElement("h3");
+var p01 = document.createElement("p");
+var p02 = document.createElement("p");
+var p03 = document.createElement("p");
+var p04 = document.createElement("p");
+
+
+for(var i=0; i < lessons.length; i++) {
+
+
+        h3.innerHTML = lessons[i].title;
+        innerdiv.appendChild(h3);
+
+
+        p01.innerHTML = lessons[i].difficulty;
+        lessondiv.appendChild(diffimg);
+        lessondiv.appendChild(p01);
+        innerdiv.appendChild(lessondiv);
+
+
+
+        p02.innerHTML = lessons[i].duration;
+        timediv.appendChild(duraimg);
+        timediv.appendChild(p02);
+        innerdiv.appendChild(timediv);
+
+        p03.innerHTML = lessons[i].subject;
+        subjectdiv.appendChild(subimg);
+        subjectdiv.appendChild(p03);
+        innerdiv.appendChild(subjectdiv);
+
+        p04.innerHTML = lessons[i].grade;
+        gradediv.appendChild(gradimg);
+        gradediv.appendChild(p04);
+        innerdiv.appendChild(gradediv);
+
+        outerdiv.appendChild(innerdiv);
+
+        document.getElementById("boxes").appendChild(outerdiv);
+        createnewlesson.style.display = 'none';
+
+        innerdiv.style = "border: none; width: 160px;height: 200px; font-size: 12px; padding-left: 10px; margin-right: 30px; box-shadow: 0 0 10px 0 grey;"
+        h3.style = "font-size: 12px; margin: 10px;"
+        lessondiv.style = "display: flex; flex-direction: row;"
+        timediv.style = "display: flex; flex-direction: row;"
+        subjectdiv.style = "display: flex; flex-direction: row;"
+        gradediv.style = "display: flex; flex-direction: row;"
+        duraimg.style = "padding-top: 15px; align-self: center;"
+        diffimg.style = "padding-top: 15px; align-self: center;"
+        subimg.style = "padding-top: 15px; align-self: center;"
+        gradimg.style = "padding-top: 15px; align-self: center;"
+        p01.style = "align-self: center; margin: 0; padding-top: 15px; padding-left: 10px; font-size: 12px;"
+        p02.style = "align-self: center; margin: 0; padding-top: 15px; padding-left: 10px; font-size: 12px;"
+        p03.style = "align-self: center; margin: 0; padding-top: 15px; padding-left: 10px; font-size: 12px;"
+        p04.style = "align-self: center; margin: 0; padding-top: 15px; padding-left: 10px; font-size: 12px;"
+
+}
+}

@@ -525,6 +525,14 @@ font-size: 33px;
 #normallessons{
   align-self: center;
 }
+#boxes {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: row;
+  animation-name: slideup;
+  animation-duration: 1s;
+  transform: translateY(3%);
+}
 .boxes{
   display: flex;
   flex-direction: row;
