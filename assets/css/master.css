@@ -779,6 +779,17 @@ border-color: #eae9e9;
   margin-top: 20px;
 
 }
+
+#selectlessoncategorydropdown, #selectlessondifficultydropdown, #chooselessontimedropdown {
+  width: 350px;
+  height: 40px;
+  font-size: 14px;
+  margin-top: 30px;
+  color: grey;
+  -webkit-box-shadow: 0px 3px 16px 0px rgba(25, 25, 25, 0.3);
+  -moz-box-shadow: 0px 3px 16px 0px rgba(25, 25, 25, 0.3);
+  box-shadow: 0px 3px 16px 0px rgba(25, 25, 25, 0.3);
+}
 /* -------- 6 MATERIALS -------- */
 
 /* -------- 6.1 MATERIALS INTRO BOKS og TABS -------- */
